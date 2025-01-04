@@ -1,5 +1,5 @@
 {
-    "name": "asgrim/example-pie-extension",
+    "name": "bellangelo/example-pie-extension",
     "type": "php-ext",
     "license": "MIT",
     "description": "Example PIE extension",
