@@ -1,6 +1,6 @@
 // vim:ft=javascript
 (function () {
-	ARG_ENABLE('example-pie-extension', 'Whether to enable example-pie-extension support', 'no');
+	ARG_ENABLE('example-pie-extension-aggelos', 'Whether to enable example-pie-extension support', 'no');
 	ARG_WITH('hello-name', 'name to use for hello', 'no');
 
 	if (PHP_EXAMPLE_PIE_EXTENSION != 'no') {
@@ -15,8 +15,8 @@
 		}
 
 		ADD_FLAG('CFLAGS_EXAMPLE_PIE_EXTENSION', '/D WIN32_ONLY_COMPILER=1 /wd4005');
-		PHP_INSTALL_HEADERS("ext/example-pie-extension", "php_example_pie_extension.h");
+		PHP_INSTALL_HEADERS("ext/example-pie-extension-aggelos", "php_example_pie_extension.h");
 
-		EXTENSION('example_pie_extension', ext_sources, true);
+		EXTENSION('example_pie_extension_aggelos', ext_sources, true);
 	}
 })();
