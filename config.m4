@@ -1,9 +1,9 @@
-dnl config.m4 for extension example_pie_extension
+dnl config.m4 for extension example_pie_extension_aggelos
 
-PHP_ARG_ENABLE([example-pie-extension],
+PHP_ARG_ENABLE([example-pie-extension-aggelos],
   [whether to enable example-pie-extension support],
-  [AS_HELP_STRING([--enable-example-pie-extension],
-    [Enable example-pie-extension support])],
+  [AS_HELP_STRING([--enable-example-pie-extension-aggelos],
+    [Enable example-pie-extension-aggelos support])],
   [no])
 
 PHP_ARG_WITH([hello-name],
@@ -28,7 +28,7 @@ if test "$PHP_EXAMPLE_PIE_EXTENSION" != "no"; then
   fi
 
   PHP_NEW_EXTENSION(
-    example_pie_extension,
+    example_pie_extension_aggelos,
     zend_example_pie_extension.c,
     $ext_shared,,$PHP_EXAMPLE_PIE_EXTENSION_CFLAGS)
 fi
