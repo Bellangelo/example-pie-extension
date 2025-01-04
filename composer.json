@@ -10,7 +10,7 @@
         "ext-example_pie_extension": "*"
     },
     "php-ext": {
-        "extension-name": "ext-example_pie_extension",
+        "extension-name": "aggelos-ext-example_pie_extension",
         "priority": 74,
         "configure-options": [
             {
