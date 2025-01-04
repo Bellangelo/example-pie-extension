@@ -15,7 +15,7 @@
 	ZEND_PARSE_PARAMETERS_END()
 #endif
 
-ZEND_DECLARE_MODULE_GLOBALS(example_pie_extension)
+ZEND_DECLARE_MODULE_GLOBALS(example_pie_extension_aggelos)
 
 /* {{{ void example_pie_extension_test()
  */
@@ -27,7 +27,7 @@ PHP_FUNCTION(example_pie_extension_test)
 }
 /* }}} */
 
-static PHP_GINIT_FUNCTION(example_pie_extension)
+static PHP_GINIT_FUNCTION(example_pie_extension_aggelos)
 {
 #if defined(COMPILE_DL_BCMATH) && defined(ZTS)
     ZEND_TSRMLS_CACHE_UPDATE();
@@ -37,7 +37,7 @@ static PHP_GINIT_FUNCTION(example_pie_extension)
 
 /* {{{ PHP_MINFO_FUNCTION
  */
-PHP_MINFO_FUNCTION(example_pie_extension)
+PHP_MINFO_FUNCTION(example_pie_extension_aggelos)
 {
     php_info_print_table_start();
     php_info_print_table_header(2, "example pie extension support", "enabled");
@@ -69,10 +69,10 @@ zend_module_entry example_pie_extension_module_entry = {
         NULL,							/* PHP_MSHUTDOWN - Module shutdown */
         NULL,							/* PHP_RINIT - Request initialization */
         NULL,							/* PHP_RSHUTDOWN - Request shutdown */
-        PHP_MINFO(example_pie_extension),			/* PHP_MINFO - Module info */
+        PHP_MINFO(example_pie_extension_aggelos),			/* PHP_MINFO - Module info */
         PHP_EXAMPLE_PIE_EXTENSION_VERSION,		/* Version */
-        PHP_MODULE_GLOBALS(example_pie_extension),	/* Module globals */
-        PHP_GINIT(example_pie_extension),			/* PHP_GINIT - Globals initialization */
+        PHP_MODULE_GLOBALS(example_pie_extension_aggelos),	/* Module globals */
+        PHP_GINIT(example_pie_extension_aggelos),			/* PHP_GINIT - Globals initialization */
         NULL,					/* PHP_GSHUTDOWN - Globals shutdown */
         NULL,
         STANDARD_MODULE_PROPERTIES_EX
@@ -83,5 +83,5 @@ zend_module_entry example_pie_extension_module_entry = {
 # ifdef ZTS
 ZEND_TSRMLS_CACHE_DEFINE()
 # endif
-ZEND_GET_MODULE(example_pie_extension)
+ZEND_GET_MODULE(example_pie_extension_aggelos)
 #endif
