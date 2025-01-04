@@ -7,7 +7,7 @@
         "php": ">=7.4,^8.0"
     },
     "replace": {
-        "ext-example_pie_extension": "*"
+        "ext-example_pie_extension2": "*"
     },
     "php-ext": {
         "extension-name": "ext-example_pie_extension_aggelos",
